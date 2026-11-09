@@ -9,7 +9,7 @@
         </article>
         <aside class="self-start overflow-hidden rounded-xl border border-slate-200">
             <h2 class="bg-leaf px-4 py-3 font-bold text-white">In this section</h2>
-            <ul class="p-2">@foreach ($related as $item)<li><a href="{{ route('page', $item->slug) }}" class="block rounded-lg px-3 py-2 text-sm hover:bg-sky-50">{{ $item->title }}</a></li>@endforeach</ul>
+            <ul class="p-2">@foreach ($related as $item)<li><a href="{{ route('page', $item->slug) }}" class="block rounded-lg px-3 py-2 text-sm hover:bg-indigo-50">{{ $item->title }}</a></li>@endforeach</ul>
         </aside>
     </div>
 </x-web-page>

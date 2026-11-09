@@ -11,7 +11,7 @@
                     @if ($person->photo)
                         <img src="{{ asset($person->photo) }}" alt="{{ $person->name }}" loading="lazy" class="h-52 w-full object-cover">
                     @else
-                        <span class="flex h-52 items-center justify-center bg-sky-50 text-4xl font-extrabold text-navy">{{ initials($person->name) }}</span>
+                        <span class="flex h-52 items-center justify-center bg-indigo-50 text-4xl font-extrabold text-navy">{{ initials($person->name) }}</span>
                     @endif
                     <div class="p-3"><p class="font-bold text-navy">{{ $person->name }}</p><p class="text-[13px] text-slate-600">{{ $person->designation }}</p></div>
                 </div>

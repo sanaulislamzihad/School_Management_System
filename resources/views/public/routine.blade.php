@@ -5,7 +5,7 @@
     <form method="GET" class="mb-5 flex flex-wrap items-end gap-3" x-data="{ c: @js((string) request('class_id')), sections: @js($sections) }">
         <div><label class="mb-1 block text-sm font-semibold" for="c">Class</label><select id="c" name="class_id" x-model="c" class="rounded-lg border border-slate-300 px-3 py-2" required><option value="">Select class</option>@foreach ($classes as $o)<option value="{{ $o['value'] }}" @selected((string) request('class_id') === (string) $o['value'])>{{ $o['label'] }}</option>@endforeach</select></div>
         <div><label class="mb-1 block text-sm font-semibold" for="s">Section</label><select id="s" name="section_id" class="rounded-lg border border-slate-300 px-3 py-2" required><option value="">Select section</option><template x-for="o in sections.filter(x => String(x.parent) === c)" :key="o.value"><option :value="o.value" x-text="o.label" :selected="String(o.value) === @js((string) request('section_id'))"></option></template></select></div>
-        <button class="rounded-lg bg-navy px-5 py-2 font-semibold text-white">Show routine</button>
+        <button class="rounded-full bg-brand px-5 py-2 font-semibold text-white">Show routine</button>
     </form>
     @if ($periods->isNotEmpty())
         <div class="grid gap-4 md:grid-cols-2">

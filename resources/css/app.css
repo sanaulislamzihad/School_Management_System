@@ -45,10 +45,13 @@
     --color-primary: var(--primary);
     --color-primary-ink: var(--primary-ink);
     --color-primary-soft: var(--primary-soft);
-    --color-navy: #0b3d6e;
-    --color-navy-dark: #082c50;
-    --color-leaf: #4f9a06;
-    --color-leaf-dark: #3e7c04;
+    --color-navy: #1e1b4b;
+    --color-navy-dark: #15133a;
+    --color-leaf: #0f766e;
+    --color-leaf-dark: #0f766e;
+    --color-brand: #4f46e5;
+    --color-brand-dark: #4338ca;
+    --color-sun: #fbbf24;
 }
 
 @layer base {

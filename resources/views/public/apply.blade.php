@@ -14,7 +14,7 @@
         <div><label for="gender" class="mb-1 block text-sm font-semibold">Gender <span class="text-rose-700">*</span></label><select id="gender" name="gender" class="{{ $f }}" required>@foreach (['Male', 'Female', 'Other'] as $g)<option @selected(old('gender') === $g)>{{ $g }}</option>@endforeach</select></div>
         <div><label for="dob" class="mb-1 block text-sm font-semibold">Date of birth <span class="text-rose-700">*</span></label><input id="dob" type="date" name="dob" value="{{ old('dob') }}" class="{{ $f }}" required>@error('dob')<p class="mt-1 text-sm text-rose-700">{{ $message }}</p>@enderror</div>
         <div><label for="class_id" class="mb-1 block text-sm font-semibold">Class applying for <span class="text-rose-700">*</span></label><select id="class_id" name="class_id" class="{{ $f }}" required><option value="">Select class</option>@foreach ($classes as $o)<option value="{{ $o['value'] }}" @selected(old('class_id') == $o['value'])>{{ $o['label'] }}</option>@endforeach</select></div>
-        <div class="sm:col-span-2"><button class="rounded-lg bg-navy px-6 py-2.5 font-semibold text-white">Submit application</button></div>
+        <div class="sm:col-span-2"><button class="rounded-full bg-brand px-6 py-2.5 font-semibold text-white">Submit application</button></div>
     </form>
 </x-web-page>
 @endsection
