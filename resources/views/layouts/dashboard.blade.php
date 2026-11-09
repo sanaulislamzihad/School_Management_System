@@ -8,7 +8,8 @@
     $user = auth()->user();
     $menu = \App\Support\Navigation::for($user);
     $now = request()->url();
-    $isActive = fn ($url) => $now === $url || str_starts_with($now, $url.'/');
+    $home = route($user->homeRoute());
+    $isActive = fn ($url) => $now === $url || ($url !== $home && str_starts_with($now, $url.'/'));
     $roleLabel = ['admin' => 'Administrator', 'teacher' => 'Teacher', 'student' => 'Student'][$user->role];
 @endphp
 <body x-data="{ side: false, q: '' }">
