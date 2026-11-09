@@ -1,9 +1,172 @@
 @import 'tailwindcss';
+@import '@fontsource-variable/plus-jakarta-sans';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
+@source '../../app/Support/*.php';
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --bg: #f5f6fb;
+    --surface: #ffffff;
+    --surface-2: #f8f9fd;
+    --line: #e6e8f2;
+    --ink: #1a1c3b;
+    --ink-2: #5a5e7e;
+    --ink-3: #6f7392;
+    --primary: #4f46e5;
+    --primary-ink: #4338ca;
+    --primary-soft: #eef0ff;
+}
+
+.dark {
+    --bg: #0e1024;
+    --surface: #171a34;
+    --surface-2: #1d2040;
+    --line: #2a2e54;
+    --ink: #eceefb;
+    --ink-2: #b4b8d8;
+    --ink-3: #979cc2;
+    --primary: #818cf8;
+    --primary-ink: #a5b0fc;
+    --primary-soft: #262a58;
+}
+
+@theme inline {
+    --font-sans: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, 'Segoe UI', sans-serif;
+    --color-bg: var(--bg);
+    --color-surface: var(--surface);
+    --color-surface-2: var(--surface-2);
+    --color-line: var(--line);
+    --color-ink: var(--ink);
+    --color-ink-2: var(--ink-2);
+    --color-ink-3: var(--ink-3);
+    --color-primary: var(--primary);
+    --color-primary-ink: var(--primary-ink);
+    --color-primary-soft: var(--primary-soft);
+    --color-navy: #0b3d6e;
+    --color-navy-dark: #082c50;
+    --color-leaf: #4f9a06;
+    --color-leaf-dark: #3e7c04;
+}
+
+@layer base {
+    body {
+        @apply bg-bg text-ink font-sans antialiased;
+    }
+    [x-cloak] {
+        display: none !important;
+    }
+    :focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+    }
+}
+
+@layer components {
+    .card {
+        @apply bg-surface border border-line rounded-2xl;
+    }
+    .card-head {
+        @apply flex items-center justify-between gap-3 px-5 py-4 border-b border-line;
+    }
+    .card-title {
+        @apply font-bold text-[15px] text-ink;
+    }
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold border border-line bg-surface text-ink transition-colors cursor-pointer whitespace-nowrap hover:bg-surface-2 disabled:opacity-50 disabled:cursor-not-allowed;
+    }
+    .btn-primary {
+        @apply border-transparent text-white hover:opacity-90;
+        background: #4f46e5;
+    }
+    .btn-danger {
+        @apply border-transparent bg-rose-600 text-white hover:bg-rose-700;
+    }
+    .btn-sm {
+        @apply px-3 py-1.5 text-[13px] rounded-lg;
+    }
+    .field-label {
+        @apply block text-[13px] font-semibold text-ink-2 mb-1.5;
+    }
+    .input {
+        @apply w-full rounded-xl border border-line bg-surface px-3.5 py-2.5 text-sm text-ink placeholder:text-ink-3 focus:border-primary focus:outline-none;
+    }
+    .field-error {
+        @apply text-[13px] text-rose-600 dark:text-rose-400 mt-1;
+    }
+    .tbl {
+        @apply w-full text-sm;
+    }
+    .tbl th {
+        @apply text-left font-semibold text-[12px] uppercase tracking-wide text-ink-3 px-5 py-3 border-b border-line whitespace-nowrap bg-surface-2;
+    }
+    .tbl td {
+        @apply px-5 py-3.5 border-b border-line text-ink-2 align-middle;
+    }
+    .tbl tbody tr:last-child td {
+        @apply border-b-0;
+    }
+    .tbl tbody tr:hover td {
+        @apply bg-surface-2;
+    }
+    .badge {
+        @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold whitespace-nowrap;
+    }
+    .badge-green { @apply bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300; }
+    .badge-amber { @apply bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300; }
+    .badge-red { @apply bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300; }
+    .badge-blue { @apply bg-indigo-100 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-300; }
+    .badge-gray { @apply bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300; }
+
+    .tone-indigo { @apply bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300; }
+    .tone-teal { @apply bg-teal-100 text-teal-700 dark:bg-teal-950 dark:text-teal-300; }
+    .tone-sky { @apply bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300; }
+    .tone-amber { @apply bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300; }
+    .tone-rose { @apply bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300; }
+    .tone-violet { @apply bg-violet-100 text-violet-700 dark:bg-violet-950 dark:text-violet-300; }
+    .tone-emerald { @apply bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300; }
+    .tone-orange { @apply bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300; }
+
+    .side-link {
+        @apply flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-indigo-100/80 transition-colors hover:bg-white/8 hover:text-white w-full text-left;
+    }
+    .side-link.active {
+        @apply text-white font-semibold;
+        background: linear-gradient(95deg, #5b54f0, #7c5cf5);
+    }
+    .side-sub {
+        @apply block rounded-lg px-3 py-2 text-[13px] text-indigo-100/70 hover:text-white hover:bg-white/8;
+    }
+    .side-sub.active {
+        @apply text-white font-semibold bg-white/12;
+    }
+    .sidebar-scroll {
+        scrollbar-width: thin;
+        scrollbar-color: rgb(255 255 255 / 0.2) transparent;
+    }
+    .web-body p + p {
+        @apply mt-4;
+    }
+}
+
+@keyframes ticker {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+.ticker-track {
+    animation: ticker 32s linear infinite;
+}
+.ticker-track:hover {
+    animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; }
+}
+
+@media print {
+    .no-print { display: none !important; }
+    body { background: #fff; }
+    .print-reset { margin: 0 !important; padding: 0 !important; }
 }
