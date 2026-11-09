@@ -1,58 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ABC School Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A full-stack school website and management system built with Laravel. It combines a public school website with separate workspaces for administrators, teachers and students.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Public website**
+- Home page with notices, leadership messages, teachers, photo and video galleries
+- Online admission form, contact form and result lookup
+- Editable pages for school information, rules and activities
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Administrator**
+- Dashboard with attendance, fee and enrolment insights
+- Student records, online admissions and class promotions
+- Employees, staff attendance, leave and payroll
+- Academic setup, teacher assignment and timetable with clash detection
+- Exams, marks entry, GPA calculation, merit lists and result publishing
+- Invoices, fee collection, due list and income and expense records
+- Library, transport, hostels, notices and website content
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Teacher**
+- Personal dashboard and timetable
+- Attendance and marks entry, limited to assigned classes and subjects
+- Class tests, assignments, daily diary and leave requests
 
-## Learning Laravel
+**Student**
+- Dashboard, class routine and attendance history
+- Assignments, daily diary, class tests and published results
+- Fee statements, notices, leave applications, downloads and a printable ID card
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tech stack
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- PHP 8.4 and Laravel 13
+- Blade, Tailwind CSS 4 and Alpine.js
+- SQLite by default (MySQL through `.env`)
+- Vite
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## Getting started
 
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Requirements: PHP 8.3 or newer with the `pdo_sqlite`, `mbstring`, `openssl`, `fileinfo` and `gd` extensions, Composer, and Node.js 20 or newer.
 
 ```bash
-composer require laravel/boost --dev
+git clone https://github.com/sanaulislamzihad/School_Management_System.git
+cd School_Management_System
 
-php artisan boost:install
+composer install
+npm install
+
+cp .env.example .env
+php artisan key:generate
+touch database/database.sqlite
+php artisan migrate --seed
+
+npm run build
+php artisan serve
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Open <http://localhost:8000>. For frontend development, run `npm run dev` alongside `php artisan serve`.
 
-## Contributing
+### Demo accounts
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+These accounts exist only in the seeded demo data. Change them before any real deployment.
 
-## Code of Conduct
+| Role | Sign-in page | User ID | Password |
+| --- | --- | --- | --- |
+| Administrator | `/staff-login` | `admin` | `admin123` |
+| Teacher | `/staff-login` | `T1002` | `teacher123` |
+| Student | `/student-login` | `2600001` | `student123` |
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Project structure
 
-## Security Vulnerabilities
+```text
+app/Http/Controllers   Public site, admin, teacher and student portal controllers
+app/Services           Result, grade and GPA calculation
+app/Support            Navigation, dropdown lookups and resource page configuration
+database/migrations    Database schema
+database/seeders       Demo school data and website content
+resources/views        Blade templates for the website and dashboards
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Media credits
+
+Demonstration photos and videos come from Wikimedia Commons under free licences. Staff portraits are placeholders from randomuser.me. Full attribution is available on the `/credits` page and in `resources/data/media.json`. Replace these with the school's own media before going live.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is released under the [MIT License](https://opensource.org/licenses/MIT).
