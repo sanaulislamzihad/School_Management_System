@@ -5,7 +5,7 @@
     <button type="button" class="btn btn-primary" onclick="window.print()"><x-lucide-printer class="size-4" /> Print card</button>
 </x-page-head>
 <div class="mx-auto w-80 overflow-hidden rounded-2xl border border-line bg-white text-slate-800 shadow-lg">
-    <div class="flex items-center gap-3 p-4 text-white" style="background: linear-gradient(115deg, #4338ca, #0f9d94); print-color-adjust: exact; -webkit-print-color-adjust: exact">
+    <div class="flex items-center gap-3 p-4 text-white" style="background: #4338ca; print-color-adjust: exact; -webkit-print-color-adjust: exact">
         <img src="{{ asset('logo.svg') }}" alt="" class="size-11">
         <div class="leading-tight"><p class="text-lg font-extrabold">{{ setting('school_name') }}</p><p class="text-[11px]">{{ setting('address') }}</p></div>
     </div>

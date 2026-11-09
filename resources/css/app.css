@@ -134,7 +134,7 @@
     }
     .side-link.active {
         @apply text-white font-semibold;
-        background: linear-gradient(95deg, #5b54f0, #7c5cf5);
+        background: #4f46e5;
     }
     .side-sub {
         @apply block rounded-lg px-3 py-2 text-[13px] text-indigo-100/70 hover:text-white hover:bg-white/8;

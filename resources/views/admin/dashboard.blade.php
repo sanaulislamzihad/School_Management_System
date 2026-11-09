@@ -10,7 +10,7 @@
 @endphp
 
 @section('content')
-<section class="relative mb-5 overflow-hidden rounded-2xl p-6 text-white sm:p-7" style="background: linear-gradient(115deg, #4338ca 0%, #6d4bea 55%, #0f9d94 100%)">
+<section class="relative mb-5 overflow-hidden rounded-2xl p-6 text-white sm:p-7" style="background: #4338ca">
     <div class="relative flex flex-wrap items-center justify-between gap-5">
         <div>
             <p class="text-sm text-indigo-100">{{ now()->format('l, F j, Y') }}</p>

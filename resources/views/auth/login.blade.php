@@ -9,7 +9,7 @@
 <div class="grid min-h-screen lg:grid-cols-2">
     <div class="relative hidden lg:block">
         <img src="{{ asset('images/school/classroom.jpg') }}" alt="" class="absolute inset-0 size-full object-cover">
-        <div class="absolute inset-0" style="background: linear-gradient(160deg, rgb(28 29 82 / .88), rgb(13 148 136 / .62))"></div>
+        <div class="absolute inset-0" style="background: rgb(23 24 63 / .82)"></div>
         <div class="relative flex h-full flex-col justify-between p-12 text-white">
             <a href="{{ url('/') }}" class="flex items-center gap-3">
                 <img src="{{ asset('logo.svg') }}" alt="" class="size-12">

@@ -5,7 +5,7 @@
     $greeting = $hour < 12 ? 'Good morning' : ($hour < 17 ? 'Good afternoon' : 'Good evening');
 @endphp
 @section('content')
-<section class="mb-5 flex flex-wrap items-center justify-between gap-5 rounded-2xl p-6 text-white" style="background: linear-gradient(115deg, #4338ca 0%, #6d4bea 55%, #0f9d94 100%)">
+<section class="mb-5 flex flex-wrap items-center justify-between gap-5 rounded-2xl p-6 text-white" style="background: #4338ca">
     <div class="flex items-center gap-4">
         <x-avatar :name="$me->name" :photo="$me->photo" class="size-16 border-2 border-white/40 text-lg" />
         <div><p class="text-sm text-indigo-100">{{ $greeting }}</p><h1 class="text-2xl font-extrabold tracking-tight">{{ $me->name }}</h1><p class="text-indigo-100">{{ $me->schoolClass->name }} {{ $me->section->name ?? '' }} · Roll {{ $me->roll }} · ID {{ $me->student_no }}</p></div>

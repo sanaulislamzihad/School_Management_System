@@ -15,13 +15,13 @@
     </div>
 </div>
 
-<section class="bg-gradient-to-b from-slate-100 to-white pb-6">
+<section class="bg-slate-100 pb-6">
     <div class="mx-auto grid max-w-6xl gap-5 px-4 pt-4 lg:grid-cols-[1fr_320px]">
         <div x-data="{ i: 0, n: {{ count($slides) }} }" x-init="if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(() => i = (i + 1) % n, 5500)" class="relative h-72 overflow-hidden rounded-xl shadow-md sm:h-[440px]">
             @foreach ($slides as $index => [$file, $caption])
                 <figure x-show="i === {{ $index }}" x-transition.opacity.duration.500ms class="absolute inset-0" @if($index) x-cloak @endif>
                     <img src="{{ asset('images/school/'.$file) }}" alt="{{ $caption }}" class="size-full object-cover">
-                    <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent p-6 pt-16 text-xl font-bold text-white sm:text-2xl">{{ $caption }}</figcaption>
+                    <figcaption class="absolute inset-x-0 bottom-0 bg-black/65 px-6 py-4 pr-24 text-xl font-bold text-white sm:text-2xl">{{ $caption }}</figcaption>
                 </figure>
             @endforeach
             <div class="absolute bottom-4 right-5 flex gap-1.5">

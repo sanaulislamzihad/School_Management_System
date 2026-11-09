@@ -17,7 +17,7 @@
 
     <aside :class="side ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'"
            class="no-print fixed inset-y-0 left-0 z-40 flex w-68 -translate-x-full flex-col transition-transform lg:sticky lg:top-0 lg:h-screen lg:translate-x-0"
-           style="background: linear-gradient(180deg, #1c1d52 0%, #13143a 100%)">
+           style="background: #17183f">
         <a href="{{ route($user->homeRoute()) }}" class="flex items-center gap-3 px-5 py-5">
             <img src="{{ asset('logo.svg') }}" alt="" class="size-10">
             <span class="leading-tight">
