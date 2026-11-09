@@ -6,29 +6,7 @@ A full-stack school management system built with Laravel. It brings admissions, 
 
 The public website gives parents, students and visitors one place for school news, people and services.
 
-**Home page with notice ticker, image slider and notice board**
-
-![Home page with navigation, notice ticker, image slider and notice board](docs/screenshots/home-hero.jpg)
-
-**Messages from school leadership**
-
-![Messages from the head teacher and chairperson](docs/screenshots/leadership-messages.jpg)
-
-**Quick access, school information, events and top achievers**
-
-![Quick links, about section, upcoming events and top achievers](docs/screenshots/school-highlights.jpg)
-
-**Teacher profiles**
-
-![Teacher profile cards](docs/screenshots/teachers.jpg)
-
-**Photo gallery**
-
-![Photo gallery of campus life](docs/screenshots/photo-gallery.jpg)
-
-**Video gallery**
-
-![Video gallery with playable school videos](docs/screenshots/video-gallery.jpg)
+![Full landing page](docs/screenshots/landing-page.jpg)
 
 ## Role-based dashboards
 
@@ -45,6 +23,20 @@ Each role signs in to its own workspace and sees only the pages and records it i
 **Student:** routine, assignments, results, fees and notices
 
 ![Student dashboard](docs/screenshots/student-dashboard.jpg)
+
+## Best features
+
+**Results and merit list:** calculates GPA and class position from entered marks, and publishes results when they are ready
+
+![Results and merit list](docs/screenshots/feature-results.jpg)
+
+**Fee management:** creates invoices, records cash, bKash, Nagad and bank payments, and tracks what is still due
+
+![Fee management](docs/screenshots/feature-fees.jpg)
+
+**Attendance register:** teachers mark a whole class in one screen, limited to the classes assigned to them
+
+![Attendance register](docs/screenshots/feature-attendance.jpg)
 
 ## Features
 
