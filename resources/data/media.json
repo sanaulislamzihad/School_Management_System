@@ -1,0 +1,176 @@
+{
+  "photos": [
+    {
+      "file": "images/school/classroom.jpg",
+      "caption": "Students attentive in class",
+      "source": "https://commons.wikimedia.org/wiki/File:Ccpr_CLASS_ROOM.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Asad"
+    },
+    {
+      "file": "images/school/campus.jpg",
+      "caption": "School campus",
+      "source": "https://commons.wikimedia.org/wiki/File:Administration_Building_of_Dr._Khastagir_Government_Girls%27_High_School.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Risadul Islam (Foisal)"
+    },
+    {
+      "file": "images/school/assembly.jpg",
+      "caption": "Morning assembly",
+      "source": "https://commons.wikimedia.org/wiki/File:%E0%A6%97%E0%A6%B0%E0%A6%BF%E0%A6%AB%E0%A6%BE_%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9A_%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Gobindo Sarkar"
+    },
+    {
+      "file": "images/school/academic-building.jpg",
+      "caption": "Academic building",
+      "source": "https://commons.wikimedia.org/wiki/File:Khoksa_Janipur_Pilot_High_School..JPG",
+      "license": "CC BY-SA 4.0",
+      "author": "Uday Karmoker"
+    },
+    {
+      "file": "images/school/group-study.jpg",
+      "caption": "Group study",
+      "source": "https://commons.wikimedia.org/wiki/File:Students_writing_in_class.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Gumah1"
+    },
+    {
+      "file": "images/school/science-class.jpg",
+      "caption": "Science practical",
+      "source": "https://commons.wikimedia.org/wiki/File:Photo_of_the_Week-_Students_from_Roosevelt_Middle_School_win_the_2013_Regional_Science_Bowl_(8724060498).jpg",
+      "license": "Public domain",
+      "author": "ENERGY.GOV"
+    },
+    {
+      "file": "images/school/stem-class.jpg",
+      "caption": "Hands-on classroom",
+      "source": "https://commons.wikimedia.org/wiki/File:Gemini_IT_Specialist_Engages_Students_in_Computer_Science_Demo_(Hilo-High-Zarman-Duke-1-CC).jpg",
+      "license": "CC BY 4.0",
+      "author": "International Gemini Observatory/NOIRLab/NSF/AURA/R. Sparks"
+    },
+    {
+      "file": "images/school/chemistry-lab.jpg",
+      "caption": "Chemistry laboratory",
+      "source": "https://commons.wikimedia.org/wiki/File:U.S._Department_of_Energy_-_Science_-_477_003_011_(9786813126).jpg",
+      "license": "Public domain",
+      "author": "U.S. Department of Energy from United States"
+    },
+    {
+      "file": "images/school/computer-lab.jpg",
+      "caption": "Computer laboratory",
+      "source": "https://commons.wikimedia.org/wiki/File:Nyungwe_CDSS_Malawi.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Nicola Turing"
+    },
+    {
+      "file": "images/school/relay-race.jpg",
+      "caption": "Annual sports: relay race",
+      "source": "https://commons.wikimedia.org/wiki/File:2014-11-15_Relay_race_on_the_Sports_day_of_Haikou_Elementary_School_(Zhunan).jpg",
+      "license": "CC BY 2.0",
+      "author": "曾 成訓"
+    },
+    {
+      "file": "images/school/games.jpg",
+      "caption": "Playground games",
+      "source": "https://commons.wikimedia.org/wiki/File:Fairfax_County_School_sports_-_05.JPG",
+      "license": "CC BY 4.0",
+      "author": "Jarek Tuszyński"
+    },
+    {
+      "file": "images/school/hall-assembly.jpg",
+      "caption": "Assembly hall",
+      "source": "https://commons.wikimedia.org/wiki/File:NUS_HighAssembly.jpg",
+      "license": "Public domain",
+      "author": "Nushs."
+    },
+    {
+      "file": "images/school/campus-assembly.jpg",
+      "caption": "Campus gathering",
+      "source": "https://commons.wikimedia.org/wiki/File:GMSSS_DHUNDAN.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "Punitrajgautam"
+    },
+    {
+      "file": "images/school/teacher-board.jpg",
+      "caption": "Teacher at the blackboard",
+      "source": "https://commons.wikimedia.org/wiki/File:Vector_calculus_in_Haiti.jpg",
+      "license": "CC BY 2.0",
+      "author": "Todd Huffman"
+    },
+    {
+      "file": "images/school/library.jpg",
+      "caption": "School library",
+      "source": "https://commons.wikimedia.org/wiki/File:Students_Reading_at_Tables_in_School_Library(GN08836).jpg",
+      "license": "CC0",
+      "author": "State Government Photographer"
+    },
+    {
+      "file": "images/school/main-building.jpg",
+      "caption": "Main building",
+      "source": "https://commons.wikimedia.org/wiki/File:Cantonment_public_school_and_college_momenshahi_school_building.jpg",
+      "license": "CC BY-SA 4.0",
+      "author": "SD Lotus"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Gymnastics at school",
+      "poster": "images/video/acrobatics.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2e/Acrobatics_at_school%2C_2009.webm/Acrobatics_at_school%2C_2009.webm.240p.vp9.webm",
+      "type": "video/webm",
+      "source": "https://commons.wikimedia.org/wiki/File:Acrobatics_at_school,_2009.webm",
+      "license": "CC0",
+      "author": "H3lla3x",
+      "seconds": 42
+    },
+    {
+      "title": "Inside a computer lab",
+      "poster": "images/video/computer-lab.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/d7/Free_Computer_Lab.wmv.ogv/Free_Computer_Lab.wmv.ogv.240p.vp9.webm",
+      "type": "video/webm",
+      "source": "https://commons.wikimedia.org/wiki/File:Free_Computer_Lab.wmv.ogv",
+      "license": "Public domain",
+      "author": "bharat bhushan kapoor",
+      "seconds": 41
+    },
+    {
+      "title": "Rethinking how a school teaches",
+      "poster": "images/video/flipped-school.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bb/Why_I_Flipped_My_High_School.webm/Why_I_Flipped_My_High_School.webm.240p.vp9.webm",
+      "type": "video/webm",
+      "source": "https://commons.wikimedia.org/wiki/File:Why_I_Flipped_My_High_School.webm",
+      "license": "CC BY 3.0",
+      "author": "https://www.youtube.com/user/TroyStein",
+      "seconds": 205
+    },
+    {
+      "title": "A day at a girls’ residential school",
+      "poster": "images/video/girls-school.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b6/Sarva_shiksha_abhiyan%2C_kasturba_gandhi_balika_vidyalaya.webm/Sarva_shiksha_abhiyan%2C_kasturba_gandhi_balika_vidyalaya.webm.240p.vp9.webm",
+      "type": "video/webm",
+      "source": "https://commons.wikimedia.org/wiki/File:Sarva_shiksha_abhiyan,_kasturba_gandhi_balika_vidyalaya.webm",
+      "license": "CC BY-SA 3.0",
+      "author": "Rahulkepapa",
+      "seconds": 581
+    }
+  ],
+  "portraits": [
+    "images/people/m32.jpg",
+    "images/people/m45.jpg",
+    "images/people/m52.jpg",
+    "images/people/m75.jpg",
+    "images/people/m83.jpg",
+    "images/people/m11.jpg",
+    "images/people/m22.jpg",
+    "images/people/m60.jpg",
+    "images/people/f12.jpg",
+    "images/people/f26.jpg",
+    "images/people/f44.jpg",
+    "images/people/f57.jpg",
+    "images/people/f68.jpg",
+    "images/people/f79.jpg",
+    "images/people/f33.jpg",
+    "images/people/f90.jpg"
+  ]
+}
