@@ -119,6 +119,20 @@
     </div>
 </div>
 
+@if (session('credentials'))
+    <div x-data="{ show: true }" x-show="show" class="no-print fixed inset-0 z-50 flex items-center justify-center bg-slate-900/50 p-4" role="alertdialog" aria-modal="true" aria-labelledby="cred-title">
+        <div class="card w-full max-w-md p-6">
+            <h2 id="cred-title" class="text-lg font-bold">Sign-in details created</h2>
+            <p class="mt-1 text-sm text-ink-2">Share these with the account holder now. The password will not be shown again.</p>
+            <dl class="mt-4 space-y-2 rounded-xl bg-surface-2 p-4 text-sm">
+                <div class="flex justify-between gap-4"><dt class="text-ink-2">User ID</dt><dd class="font-mono font-bold">{{ session('credentials.login') }}</dd></div>
+                <div class="flex justify-between gap-4"><dt class="text-ink-2">Password</dt><dd class="font-mono font-bold">{{ session('credentials.password') }}</dd></div>
+            </dl>
+            <div class="mt-5 flex justify-end"><button type="button" class="btn btn-primary" @click="show = false">Done</button></div>
+        </div>
+    </div>
+@endif
+
 @if (session('ok') || session('error'))
     <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 4500)" role="status"
          class="no-print fixed bottom-5 right-5 z-50 flex max-w-sm items-center gap-3 rounded-xl px-4 py-3 text-sm font-semibold text-white shadow-xl {{ session('error') ? 'bg-rose-600' : 'bg-emerald-700' }}">

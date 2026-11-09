@@ -93,7 +93,7 @@
                                     @isset($def['rowLink'])
                                         <a class="btn btn-sm" href="{{ staff_route($def['rowLink']['route'], ['classTest' => $row->id]) }}">{{ $def['rowLink']['label'] }}</a>
                                     @endisset
-                                    <button type="button" class="btn btn-sm" @click='edit(@json($row, JSON_HEX_APOS | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_QUOT))' aria-label="Edit"><x-lucide-pencil class="size-4" /></button>
+                                    <button type="button" class="btn btn-sm" @click="edit(@js($row))" aria-label="Edit"><x-lucide-pencil class="size-4" /></button>
                                     <button type="button" class="btn btn-sm text-rose-600 dark:text-rose-400" @click="deleting = {{ $row->id }}" aria-label="Delete"><x-lucide-trash-2 class="size-4" /></button>
                                 </td>
                             </tr>
