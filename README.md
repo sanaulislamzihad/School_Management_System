@@ -57,6 +57,12 @@ php artisan serve
 
 Open <http://localhost:8000>. For frontend development, run `npm run dev` alongside `php artisan serve`.
 
+Run the automated tests with:
+
+```bash
+php artisan test
+```
+
 ### Demo accounts
 
 These accounts exist only in the seeded demo data. Change them before any real deployment.
@@ -81,7 +87,3 @@ resources/views        Blade templates for the website and dashboards
 ## Media credits
 
 Demonstration photos and videos come from Wikimedia Commons under free licences. Staff portraits are placeholders from randomuser.me. Full attribution is available on the `/credits` page and in `resources/data/media.json`. Replace these with the school's own media before going live.
-
-## License
-
-This project is released under the [MIT License](https://opensource.org/licenses/MIT).
