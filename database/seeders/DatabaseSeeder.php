@@ -100,7 +100,7 @@ class DatabaseSeeder extends Seeder
 
         $teacherHash = Hash::make('teacher123');
         $staff = [
-            ['Rezaul Karim', 'Head Teacher', 'Administration', 'Male', 'm60', null, 62000],
+            ['Rezaul Karim', 'Head Teacher', 'Administration', 'Male', 'm83', null, 62000],
             ['Farhana Yasmin', 'Senior Teacher', 'Bangla', 'Female', 'f12', 'Bangla', 38000],
             ['Tanvir Hasan', 'Assistant Teacher', 'Bangla', 'Male', 'm32', 'Bangla', 30000],
             ['Nusrat Jahan', 'Senior Teacher', 'English', 'Female', 'f26', 'English', 38000],
@@ -109,7 +109,7 @@ class DatabaseSeeder extends Seeder
             ['Sharmin Akter', 'Assistant Teacher', 'Mathematics', 'Female', 'f44', 'Mathematics', 31000],
             ['Mahmudul Hasan', 'Senior Teacher', 'Science', 'Male', 'm75', 'Science', 39000],
             ['Ayesha Siddika', 'Assistant Teacher', 'Science', 'Female', 'f57', 'Science', 31000],
-            ['Rakibul Islam', 'ICT Instructor', 'ICT', 'Male', 'm83', 'ICT', 33000],
+            ['Rakibul Islam', 'ICT Instructor', 'ICT', 'Male', 'm60', 'ICT', 33000],
             ['Abdul Malek', 'Assistant Teacher', 'Religious Studies', 'Male', 'm11', 'Religion', 29000],
             ['Rumana Parvin', 'Assistant Teacher', 'Social Science', 'Female', 'f68', 'Social Science', 30000],
             ['Sabina Khatun', 'Arts Teacher', 'Fine Arts', 'Female', 'f79', 'Drawing', 27000],

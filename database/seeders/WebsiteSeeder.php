@@ -68,14 +68,14 @@ class WebsiteSeeder extends Seeder
     private function people(): void
     {
         DB::table('web_messages')->insert([
-            ['slug' => 'head-teacher', 'heading' => 'Message from the Head Teacher', 'name' => 'Rezaul Karim', 'designation' => 'Head Teacher', 'photo' => 'images/people/m60.jpg',
+            ['slug' => 'head-teacher', 'heading' => 'Message from the Head Teacher', 'name' => 'Rezaul Karim', 'designation' => 'Head Teacher', 'photo' => 'images/people/m83.jpg',
                 'body' => "At ABC School, we believe that good education shapes character as much as it builds knowledge. Our teachers work closely with every student so that no child is left behind.\n\nWe encourage curiosity, honesty and hard work, and we are proud to partner with families on this journey. Thank you for placing your trust in us."],
             ['slug' => 'chairperson', 'heading' => 'Message from the Chairperson', 'name' => 'Nasima Rahman', 'designation' => 'Chairperson, Governing Body', 'photo' => 'images/people/f90.jpg',
                 'body' => "For more than two decades, ABC School has served our community with dedication. Our goal is a safe, modern and caring school where every student can discover their strengths.\n\nThe governing body remains committed to better facilities, skilled teachers and a brighter future for all our children."],
         ]);
 
         $rows = [
-            ['governing-body', 'Nasima Rahman', 'Chairperson', 'images/people/f90.jpg'], ['governing-body', 'Rezaul Karim', 'Member Secretary', 'images/people/m60.jpg'],
+            ['governing-body', 'Nasima Rahman', 'Chairperson', 'images/people/f90.jpg'], ['governing-body', 'Rezaul Karim', 'Member Secretary', 'images/people/m83.jpg'],
             ['governing-body', 'Golam Mostafa', 'Guardian Representative', 'images/people/m22.jpg'], ['governing-body', 'Dilruba Ahmed', 'Guardian Representative', 'images/people/f33.jpg'],
             ['management-committee', 'Golam Mostafa', 'Convener', 'images/people/m22.jpg'], ['management-committee', 'Dilruba Ahmed', 'Member', 'images/people/f33.jpg'],
             ['former-headmasters', 'Abul Kashem', 'Head Teacher, 1998 to 2010', null], ['former-headmasters', 'Mominul Haque', 'Head Teacher, 2010 to 2019', null],
