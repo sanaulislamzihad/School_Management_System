@@ -1,6 +1,50 @@
-# ABC School Management System
+# School Management System
 
-A full-stack school website and management system built with Laravel. It combines a public school website with separate workspaces for administrators, teachers and students.
+A full-stack school management system built with Laravel. It brings admissions, attendance, exams, results, fees, staff and communication into one application, with a public school website and separate workspaces for administrators, teachers and students.
+
+## Landing page
+
+The public website gives parents, students and visitors one place for school news, people and services.
+
+**Home page with notice ticker, image slider and notice board**
+
+![Home page with navigation, notice ticker, image slider and notice board](docs/screenshots/home-hero.jpg)
+
+**Messages from school leadership**
+
+![Messages from the head teacher and chairperson](docs/screenshots/leadership-messages.jpg)
+
+**Quick access, school information, events and top achievers**
+
+![Quick links, about section, upcoming events and top achievers](docs/screenshots/school-highlights.jpg)
+
+**Teacher profiles**
+
+![Teacher profile cards](docs/screenshots/teachers.jpg)
+
+**Photo gallery**
+
+![Photo gallery of campus life](docs/screenshots/photo-gallery.jpg)
+
+**Video gallery**
+
+![Video gallery with playable school videos](docs/screenshots/video-gallery.jpg)
+
+## Role-based dashboards
+
+Each role signs in to its own workspace and sees only the pages and records it is allowed to use.
+
+**Administrator:** school-wide attendance, fees, admissions and exams at a glance
+
+![Administrator dashboard](docs/screenshots/admin-dashboard.jpg)
+
+**Teacher:** today's classes, assigned subjects and attendance reminders
+
+![Teacher dashboard](docs/screenshots/teacher-dashboard.jpg)
+
+**Student:** routine, assignments, results, fees and notices
+
+![Student dashboard](docs/screenshots/student-dashboard.jpg)
 
 ## Features
 
