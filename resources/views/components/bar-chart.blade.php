@@ -1,6 +1,6 @@
 @props(['points', 'title'])
 @php
-    [$w, $h, $l, $r, $t, $b] = [640, 230, 64, 14, 14, 28];
+    [$w, $h, $l, $r, $t, $b] = [420, 230, 58, 10, 14, 28];
     $count = count($points);
     $ceil = max(1, ...array_column($points, 'value'));
     $magnitude = 10 ** floor(log10($ceil));

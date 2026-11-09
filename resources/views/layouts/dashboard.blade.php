@@ -26,7 +26,7 @@
             </span>
         </a>
 
-        @if (count($menu) > 12)
+        @if ($user->role === 'admin')
             <div class="px-4 pb-3">
                 <label class="relative block">
                     <span class="sr-only">Find a page</span>
